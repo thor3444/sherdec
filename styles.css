@@ -126,11 +126,11 @@ section p {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 section,
 header,
 footer {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }

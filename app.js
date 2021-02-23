@@ -29,23 +29,31 @@ gsap.from(".brand h1", {
   yPercent: -50,
 });
 
-// Animate tagline
-gsap.to(".sub", {
+// Animate sub heading
+gsap.to("#sub", {
   scrollTrigger: {
     trigger: "header",
     start: "top top",
     scrub: 1,
-    // markers: true,
-    // pin: "header",
   },
-  scale: 0,
-  ease: "circ",
-  y: 200,
+  y: -300,
   opacity: 0,
+  duration: 1,
+});
+
+// Animate tagline
+gsap.to("#tag", {
+  scrollTrigger: {
+    trigger: "header",
+    start: "top top",
+    scrub: 1,
+  },
+  y: -200,
+  opacity: 0,
+  duration: 1,
 });
 
 // Tree
-
 gsap.fromTo(
   ".tree",
   { scale: 1.7 },
