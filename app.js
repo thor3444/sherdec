@@ -21,12 +21,12 @@ gsap.from(".brand h1", {
   duration: 0.5,
   scale: 4,
   ease: "none",
+  xPercent: -50,
+  yPercent: -50,
   x: () =>
     window.innerWidth / 2 - document.querySelector(".brand h1").clientWidth,
   y: () =>
     window.innerHeight / 2 - document.querySelector(".brand h1").clientHeight,
-  xPercent: -50,
-  yPercent: -50,
 });
 
 // Animate sub heading
