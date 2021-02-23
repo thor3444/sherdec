@@ -24,7 +24,7 @@ header {
     hsl(202, 52%, 44%) 100%
   );
   background-image: url("bg.jpg");
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
   backdrop-filter: brightness(50%);
   position: relative;
