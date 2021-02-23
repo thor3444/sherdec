@@ -35,15 +35,14 @@ header {
   flex-direction: column;
   z-index: 40;
 
-  /* background: url("http://demo.all4coding.com/magento/media/background/background_8.jpg"); */
-  background-size: auto;
+  /* background-size: auto;
   background-repeat: no-repeat;
   animation-name: backgroundEffect;
   animation-duration: 30s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
-@keyframes backgroundEffect {
+/* @keyframes backgroundEffect {
   0% {
     background-position: 0% 0%;
   }
@@ -59,7 +58,7 @@ header {
   100% {
     background-position: 0% 0%;
   }
-}
+} */
 
 .wrapper {
   position: relative;
