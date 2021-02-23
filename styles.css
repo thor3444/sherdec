@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #306844;
+  background-image: linear-gradient(90deg, #306844 0%, #2c4c3b 74%);
+}
+
+header,
+footer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dimgray;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Cinzel";
+  font-size: 8rem;
+  color: white;
+  /* text-transform: uppercase; */
+  /* text-shadow: 0 0 5px white; */
+  margin: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+h2 {
+  font-family: "Cinzel";
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+  width: 450px;
+  margin: 0 1rem;
+  text-align: center;
+  margin-top: 16rem;
+}
+
+h3 {
+  font-family: "Cinzel";
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  width: 400px;
+  margin: 0 1rem;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    hsl(163, 83%, 37%) 0%,
+    hsl(202, 52%, 44%) 100%
+  );
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.tree {
+  height: 500px;
+  z-index: 1;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  transform: scale(1);
+  transform-origin: bottom;
+  pointer-events: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.brand {
+  font-family: "Cinzel";
+}
+
+nav a {
+  font-family: "Cinzel";
+}
+
+section {
+  height: 100vh;
+  background-color: #306844;
+  background-image: linear-gradient(90deg, #306844 0%, #2c4c3b 74%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section h3 {
+  color: white;
+  font-size: 2.25rem;
+  font-family: "Cinzel";
+  text-align: center;
+}
+
+section p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Cinzel";
+  text-align: center;
+  width: 400px;
+  margin: 2rem auto;
+}
