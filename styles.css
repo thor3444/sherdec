@@ -66,7 +66,7 @@ header {
     hsl(202, 52%, 44%) 100%
   );
   background-image: url("bg.jpg");
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   backdrop-filter: brightness(50%);
   position: relative;
@@ -76,6 +76,31 @@ header {
   justify-content: center;
   flex-direction: column;
   z-index: 10;
+
+  /* background: url("http://demo.all4coding.com/magento/media/background/background_8.jpg"); */
+  background-size: auto;
+  background-repeat: no-repeat;
+  animation-name: backgroundEffect;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 30% 10%;
+  }
+  50% {
+    background-position: 0 30%;
+  }
+  75% {
+    background-position: 30% 30%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .wrapper {
@@ -137,4 +162,14 @@ section p {
   text-align: center;
   width: 400px;
   margin: 2rem auto;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section,
+header,
+footer {
+  scroll-snap-align: start;
 }
