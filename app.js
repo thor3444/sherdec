@@ -102,7 +102,7 @@ gsap.to("#leaves", {
   immediateRender: false,
 });
 
-gsap.to("#leaves", {
+gsap.to(".tree", {
   scrollTrigger: {
     trigger: "#section3",
     start: "top top",
@@ -111,4 +111,5 @@ gsap.to("#leaves", {
     pin: "#section3",
   },
   opacity: 0,
+  immediateRender: false,
 });
