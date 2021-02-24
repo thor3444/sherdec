@@ -12,21 +12,24 @@ gsap.from("nav li", {
 });
 
 // Animate brand name from center screen to next to logo
-gsap.from(".brand h1", {
+// gsap.from("#brand", {
+//   scrollTrigger: {
+//     trigger: "header",
+//     start: "top top",
+//     toggleActions: "play none none reverse",
+//   },
+//   duration: 0.5,
+// });
+
+gsap.to("#brand", {
   scrollTrigger: {
     trigger: "header",
     start: "top top",
-    toggleActions: "play none none reverse",
+    scrub: 1,
   },
-  duration: 0.5,
-  scale: 4,
-  ease: "none",
-  xPercent: -50,
-  yPercent: -50,
-  x: () =>
-    window.innerWidth / 2 - document.querySelector(".brand h1").clientWidth,
-  y: () =>
-    window.innerHeight / 2 - document.querySelector(".brand h1").clientHeight,
+  y: -500,
+  opacity: 0,
+  duration: 1,
 });
 
 // Animate sub heading
@@ -65,7 +68,29 @@ gsap.to(".tree", {
   scale: 1.7,
 });
 
-gsap.to(".tree", {
+gsap.to("#bare", {
+  scrollTrigger: {
+    trigger: "#section1",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+    pin: "#section1",
+  },
+  opacity: 0,
+});
+
+gsap.to("#leaves", {
+  scrollTrigger: {
+    trigger: "#section1",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+    pin: "#section1",
+  },
+  opacity: 0.3,
+});
+
+gsap.to("#leaves", {
   scrollTrigger: {
     trigger: "#section2",
     start: "top top",
@@ -77,7 +102,7 @@ gsap.to(".tree", {
   immediateRender: false,
 });
 
-gsap.to(".tree", {
+gsap.to("#leaves", {
   scrollTrigger: {
     trigger: "#section3",
     start: "top top",
