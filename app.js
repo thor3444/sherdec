@@ -54,35 +54,28 @@ gsap.to("#tag", {
 });
 
 // Tree
-gsap.fromTo(
-  ".tree",
-  { scale: 1.7 },
-  {
-    scrollTrigger: {
-      trigger: "#section2",
-      start: "top top",
-      end: "bottom center",
-      scrub: 1,
-      pin: "#section2",
-    },
-    scale: 1,
-  }
-);
+gsap.to(".tree", {
+  scrollTrigger: {
+    trigger: "#section1",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+    pin: "#section1",
+  },
+  scale: 1.7,
+});
 
-gsap.fromTo(
-  ".tree",
-  { scale: 1 },
-  {
-    scrollTrigger: {
-      trigger: "#section1",
-      start: "top top",
-      end: "bottom center",
-      scrub: 1,
-      pin: "#section1",
-    },
-    scale: 1.7,
-  }
-);
+gsap.to(".tree", {
+  scrollTrigger: {
+    trigger: "#section2",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+    pin: "#section2",
+  },
+  scale: 1,
+  immediateRender: false,
+});
 
 gsap.to(".tree", {
   scrollTrigger: {
