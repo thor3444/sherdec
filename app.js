@@ -56,6 +56,17 @@ gsap.to("#tag", {
   duration: 1,
 });
 
+gsap.to(".cta", {
+  scrollTrigger: {
+    trigger: "header",
+    start: "top top",
+    scrub: 1,
+  },
+  y: -100,
+  opacity: 0,
+  duration: 1,
+});
+
 // Tree
 gsap.to(".tree", {
   scrollTrigger: {
@@ -74,7 +85,6 @@ gsap.to("#bare", {
     start: "top top",
     end: "bottom center",
     scrub: 1,
-    pin: "#section1",
   },
   opacity: 0,
 });
@@ -85,7 +95,6 @@ gsap.to("#leaves", {
     start: "top top",
     end: "bottom center",
     scrub: 1,
-    pin: "#section1",
   },
   opacity: 0.3,
 });
@@ -99,6 +108,19 @@ gsap.to("#leaves", {
     pin: "#section2",
   },
   scale: 1,
+  opacity: 0,
+  immediateRender: false,
+});
+
+gsap.to("#bare", {
+  scrollTrigger: {
+    trigger: "#section2",
+    start: "top top",
+    end: "bottom center",
+    scrub: 1,
+  },
+  scale: 1,
+  opacity: 0.3,
   immediateRender: false,
 });
 
@@ -111,5 +133,7 @@ gsap.to(".tree", {
     pin: "#section3",
   },
   opacity: 0,
+  y: 100,
+  rotation: "90deg",
   immediateRender: false,
 });

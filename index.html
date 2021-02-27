@@ -5,19 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sherdec</title>
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
 
 </head>
-<body>
+<body class="bg-green-600">
 	<nav class="fixed top-0 left-0 right-0 z-50 text-white">
 		<div class="container flex flex-row mx-auto p-2 mt-2 items-center justify-between mx-4">
 
 			<a href="/index.html" class="flex flex-row items-center brand">
-				<img src="./logo.png" alt="Sherdec" class="w-12 mr-3">
+				<img src="./logo.svg" alt="Sherdec" class="w-16 mr-3">
 				<h1 class="text-lg md:text-xl lg:text-2xl text-center">Sherdec</h1>
 			</a>
 
@@ -41,7 +41,8 @@
 	<header>
 		<h1 id="brand" class="text-6xl md:text-8xl text-white">Sherdec</h1>
 		<h2 id="sub" class="text-4xl md:text-5xl text-white">Tree Service</h2>
-		<h3 id="tag" class="text-white text-center px-20 mt-4">The Tri-state's Triple Certified Tree Care & Removal Company</h3>
+		<p id="tag" class="text-white text-center px-20 mt-4 text-lg">The Tri-state's Triple Certified Tree Care & Removal Company</p>
+		<a href="/" class="bg-green-600 hover:bg-green-700 text-white py-2 px-3 mt-2 rounded cta" style="font-family: 'Cinzel';">Free Estimate</a>
 	</header>
 
 	<div class="wrapper">
@@ -73,12 +74,23 @@
 	</div>
 
 	<footer class="bg-gray-900">
-		<h1>Footer</h1>
+		<div class="container mx-auto">
+
+			<img src="./logo.svg" alt="Sherdec Logo" class="w-24">
+			<h6>Sherdec</h6>
+	
+			<ul>
+				<li>(513) 943-1797</li>
+				<li>info@sherdectreeservice.com</li>
+				<li>3065 Clemens Ln.
+					Batavia, OH 45103</li>
+			</ul>
+		</div>
 	</footer>
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 
 
 	<script src="./app.js"></script>

@@ -1,14 +1,37 @@
 body {
-  background-color: #306844;
-  background-image: linear-gradient(90deg, #306844 0%, #2c4c3b 74%);
-  font-family: "Cinzel";
   touch-action: manipulation;
   overflow-x: hidden;
+  font-family: "Raleway";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel";
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3::before,
+h3::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: white;
+  display: block;
+  margin: 1rem;
 }
 
 header,
 footer {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +89,7 @@ header {
 }
 
 .tree {
-  height: 500px;
+  max-height: 500px;
   z-index: 1;
   opacity: 0.3;
   position: fixed;
@@ -97,17 +120,17 @@ section {
 section h3 {
   color: white;
   font-size: 2.25rem;
-  font-family: "Cinzel";
   text-align: center;
 }
 
 section p {
   color: white;
   font-size: 1rem;
-  font-family: "Cinzel";
+  font-family: "Raleway";
   text-align: center;
-  width: 400px;
-  margin: 2rem auto;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
 html {
@@ -118,4 +141,8 @@ section,
 header,
 footer {
   /* scroll-snap-align: start; */
+}
+
+footer {
+  color: white;
 }
